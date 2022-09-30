@@ -5,3 +5,84 @@
 html {
   font-size: 10px;
 }
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(rgb(60, 195, 195), rgb(2, 71, 71));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+.grid {
+  width: 65vmin;
+  height: 65vmin;
+  max-width: 600px;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-items {
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  position: relative;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.5rem solid black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.5rem solid black;
+}
+
+.prompt {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
+}
